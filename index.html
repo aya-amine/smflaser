@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="./assets/styles.css">
+        <link rel="icon" type="image/x-icon" href="./assets/img/home.png">
+
+        <title>SMF Laser</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">SMF Laser</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Acceuil</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">À propos de nous</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href = "mailto: LD@smflaser.com">Contactez Nous</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">SMF Laser</h1>
+                        <p class="home__subtitle">SMF LASER (Société Marocaine de Façonnage Laser) est une des sociétés innovantes dans les domaines de la signalétique, communication visuelle, sécurité hôtelière et fabrication des formes de découpes pour cartonniers et imprimeurs. Nos solutions sont adaptées aussi bien pour les petites entreprises que pour les grandes industries. Nous serons très contents de vous conseiller</p>
+                        <a href="#" class="button">Contact</a>
+                    </div>
+    
+                    <img src="assets/img/home.png" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">À propos de nous</span>
+                        <h2 class="section-title about__initial"> Des compétences <br> à la hauteur de vos attentes.</h2>
+                        <p class="about__description">L’introduction de la technologie LASER a permis à notre entreprise de répondre initialement à un besoin du marché local des formes de découpe du marché d’emballage marocain (bois et plastique). Bientôt d’autres applications et d’autres besoins sont apparus et une grande diversification de cette usine était née (conception fabrication de la PLV, enseignes, signalétiques, affichage dynamique, etc..) Des investissements continuent dans l’élément humain, l’innovation, les technologies et les infrastructures garantissants une grande capacité de production de haute qualité, totalement en interne.
+                            <br>SMF LASER est certifié ISO9001 :2015, ISO14001 :2015 & ISO45001.<br>
+                            L’efficacité énergétique, l’utilisation de l’énergie verte et la tendance à la neutralité Carbone à l’horizon 2025, est un processus lancé en 2018.</p>
+        
+                    </div>
+
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--========== SERVICES ==========-->
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Services</span>
+                <h2 class="section-title">Signalétique</h2>
+
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        
+                       
+                        <h3 class="services__title">Intérieure</h3>
+                        <p class="services__description">Ayant une experience dans la décoration de magasins, nous vous proposons une gamme complète de signalétique intérieure. Que vous ayez une solution prête ou pas encore, soyez sûre que vos besoins serons transformés en produit répondants à vos attentes.</p>
+                    </div>
+
+                   
+
+                    <div class="services__content">
+                       
+                        <h3 class="services__title">Extérieure</h3>
+                        <p class="services__description">Notre gamme de signalétique extérieure vous permet de réaliser toutes sortes d’éléments grâce à sa modularité et aux nombreuses combinaisons possibles.</p>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+            <section class="carousel-container">
+                <div class="pic-ctn">
+                    <img src="./assets/carousel1.png" alt="" class="pic">
+                    <img src="./assets/carousel2.png" alt="" class="pic">
+                    <img src="./assets/carousel3.png" alt="" class="pic">
+                    <img src="./assets/carousel4.png" alt="" class="pic">
+                  </div>
+                  <style>
+                    
+                    html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.pic-ctn {
+  width: 100vw;
+  height: 200px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-top: 15vh;
+  margin-left: 400px;
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+                  </style>
+
+            </section>
+
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <h2 class="section-title">Formes de découpe</h2>
+                <p class="menu-cards-text">Nos formes de découpe sont conçus suivant le besoin du client. En effet chaque emballage est unique, aussi bien par sa forme que par son utilisation finale. Le matériau avec lequel il sera construit oblige à ce que la forme de découpe soit le parfait outil avec lequel il sera façonné.</p>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/plate1.png" alt="" class="menu__img">
+                        <h3 class="menu__name">FD plates</h3>
+                    
+                       
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/plate2.png" alt="" class="menu__img">
+                        <h3 class="menu__name">FD rotatives</h3>
+                       
+                       
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/plate3.png" alt="" class="menu__img">
+                        <h3 class="menu__name">FD pour imprimeurs</h3>
+                       
+                    </div>
+                </div>
+            </section>
+
+            
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <h2 class="section-title contact__initial">Notre adresse</h2>
+                        <p class="contact__description">Mohammedia, Maroc</p>
+                    </div>
+
+                    <div class="contact__button">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.8295153477584!2d-7.410110024512165!3d33.66157907330656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda632ee63dcf59f%3A0xf998a25509cacecc!2sSMF%20Laser%20S.a.r.l!5e0!3m2!1sen!2sma!4v1689584874830!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">SMF Laser</a>
+                    <span class="footer__description">Société Marocaine de Façonnage Laser</span>
+                    <div>
+                        <a href="https://web.facebook.com/smflaser/?_rdc=1&_rdr" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/smflaser/" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#services" class="footer__link">Signalétique</a></li>
+                        <li><a href="#services" class="footer__link">3M</a></li>
+                        <li><a href="#services" class="footer__link">Onity</a></li>
+                        <li><a href="#services" class="footer__link">Autres services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Informations</h3>
+                   <p>Email:<br>
+                    info@smflaser.com<br>
+                    <br>Contacts:<br>
+                    05233-16205
+<br> 05233-16206 <br>
+05233-16214 <br>
+                   </p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Adresse</h3>
+                    <ul>
+                        <li>Lot 202,</li>
+                        <li>Mohammedia 28810</li>
+                        <li>Maroc</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2023 SMF Laser. All Rights Reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="./assets/main.js"></script>
+    </body>
+</html>
