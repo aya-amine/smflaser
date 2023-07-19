@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SMF Laser</title>
 
         <!--========== BOX ICONS ==========-->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -11,7 +12,6 @@
         <link rel="stylesheet" href="./assets/styles.css">
         <link rel="icon" type="image/x-icon" href="./assets/img/home.png">
 
-        <title>SMF Laser</title>
     </head>
     <body>
 
@@ -96,79 +96,68 @@
                     
                 </div>
             </section>
-            <section class="carousel-container">
-                <div class="pic-ctn">
-                    <img src="./assets/carousel1.png" alt="" class="pic">
-                    <img src="./assets/carousel2.png" alt="" class="pic">
-                    <img src="./assets/carousel3.png" alt="" class="pic">
-                    <img src="./assets/carousel4.png" alt="" class="pic">
+            <!-----------------------Carousel------------------------>
+               <section>
+
+                <div>
+                    <div class="carousel">
+                      <ul class="slides">
+                        <input type="radio" name="radio-buttons" id="img-1" checked />
+                        <li class="slide-container">
+                          <div class="slide-image">
+                            <img src="./assets/carousel2.png">
+                          </div>
+                          <div class="carousel-controls">
+                            <label for="img-3" class="prev-slide">
+                              <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-2" class="next-slide">
+                              <span>&rsaquo;</span>
+                            </label>
+                          </div>
+                        </li>
+                        <input type="radio" name="radio-buttons" id="img-2" />
+                        <li class="slide-container">
+                          <div class="slide-image">
+                            <img src="./assets/carousel1.png">
+                          </div>
+                          <div class="carousel-controls">
+                            <label for="img-1" class="prev-slide">
+                              <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-3" class="next-slide">
+                              <span>&rsaquo;</span>
+                            </label>
+                          </div>
+                        </li>
+                        <input type="radio" name="radio-buttons" id="img-3" />
+                        <li class="slide-container">
+                          <div class="slide-image">
+                            <img src="./assets/carousel6.png">
+                          </div>
+                          <div class="carousel-controls">
+                            <label for="img-2" class="prev-slide">
+                              <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-1" class="next-slide">
+                              <span>&rsaquo;</span>
+                            </label>
+                          </div>
+                        </li>
+                        <div class="carousel-dots">
+                          <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                          <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                          <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                        </div>
+                      </ul>
+                    </div>
                   </div>
-                  <style>
-                    
-                    html, body {
-  margin: 0;
-  padding: 0;
-}
 
-.pic-ctn {
-  width: 100vw;
-  height: 200px;
-}
 
-@keyframes display {
-  0% {
-    transform: translateX(200px);
-    opacity: 0;
-  }
-  10% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  20% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  30% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-}
 
-.pic-ctn {
-  position: relative;
-  width: 300px;
-  height: 200px;
-  margin-top: 15vh;
-  margin-left: 400px;
-}
+               </section>
+                        
 
-.pic-ctn > img {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 100px);
-  opacity: 0;
-  animation: display 10s infinite;
-}
-
-img:nth-child(2) {
-  animation-delay: 2s;
-}
-img:nth-child(3) {
-  animation-delay: 4s;
-}
-img:nth-child(4) {
-  animation-delay: 6s;
-}
-img:nth-child(5) {
-  animation-delay: 8s;
-}
-                  </style>
-
-            </section>
 
             <!--========== MENU ==========-->
             <section class="menu section bd-container" id="menu">
